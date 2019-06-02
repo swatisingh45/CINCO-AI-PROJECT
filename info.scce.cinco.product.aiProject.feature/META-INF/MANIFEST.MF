@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: info.scce.cinco.product.aiProject.feature
+Bundle-SymbolicName: info.scce.cinco.product.aiProject.feature; singleton:=true
+Bundle-Version: 1.0.0
+Require-Bundle:  info.scce.cinco.product.aiProject
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

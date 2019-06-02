@@ -1,0 +1,13 @@
+#Saving jABC Project
+#Sat Jun 01 21:57:38 IST 2019
+jabc.project.definition=1.0
+transem.codegenerator.targetDir=src-gen/
+jabc.project.name=AIProject
+jabc.project.sibpath.0=<classpath>
+transem.codegenerator.sourceDir=slg/
+jabc.project.classpath.0=/bin/
+transem.SIBDir=slg-gen/
+transem.qualified.package=info.scce.cinco.product.aiProject.aiproject.AiprojectPackage
+ID=f1d7decb-74e2-44af-ba15-bf4be944e30c
+transem.other.ePackage.1=org.eclipse.graphiti.mm.pictograms.impl.PictogramsPackageImpl
+transem.other.ePackage.0=org.eclipse.graphiti.mm.algorithms.impl.AlgorithmsPackageImpl

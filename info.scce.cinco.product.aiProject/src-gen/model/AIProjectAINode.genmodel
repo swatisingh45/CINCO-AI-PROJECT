@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/info.scce.cinco.product.aiProject/src-gen" modelPluginID="info.scce.cinco.product.aiProject"
+    modelName="AIProjectAINode" complianceLevel="8.0" copyrightFields="false" editPluginID="info.scce.cinco.product.aiProject.edit"
+    editorPluginID="info.scce.cinco.product.aiProject.editor" testsPluginID="info.scce.cinco.product.aiProject.tests"
+    runtimeVersion="2.10" usedGenPackages="platform:/resource/de.jabc.cinco.meta.core.mgl.model/model/GraphModel.genmodel#//graphmodel"
+    operationReflection="true">
+  <genPackages prefix="Aiprojectainode" basePackage="info.scce.cinco.product.aiProject"
+      disposableProviderFactory="true" ecorePackage="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIs">
+      <genEnumLiterals ecoreEnumLiteral="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIs/name1"/>
+      <genEnumLiterals ecoreEnumLiteral="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIs/name2"/>
+      <genEnumLiterals ecoreEnumLiteral="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIs/name3"/>
+    </genEnums>
+    <genClasses ecoreClass="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode">
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/getAINodeView"
+          body="AINodeView aINodeView = info.scce.cinco.product.aiProject.aiprojectainode.views.ViewsFactory.eINSTANCE.createAINodeView();&#xA;&#x9;&#x9;aINodeView.setInternalAINode((info.scce.cinco.product.aiProject.aiprojectainode.internal.InternalAINode)getInternalElement());&#xA;&#x9;&#x9;return aINodeView;&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/getFileName"
+          body="return getInternalAINode().getFileName();&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/setFileName"
+          body="getInternalAINode().getElement().transact(&quot;Set FileName&quot;, () -> {&#xA;&#x9;getInternalAINode().setFileName(_arg);&#xA;});&#xA;&#x9;&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/setFileName/_arg"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/getInternalAINode"
+          body="return (info.scce.cinco.product.aiProject.aiprojectainode.internal.InternalAINode) getInternalElement();&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/isExactlyAINode"
+          body="return true;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/getOutgoingTransitions"
+          body="return this.getOutgoing(Transition.class);&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/getContainer"
+          body="return (info.scce.cinco.product.aiProject.aiprojectainode.AIProjectAINode)getInternalElement().getContainer().getContainerElement();&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/getSuccessors"
+          body="return ((graphmodel.Node)this).getSuccessors(info.scce.cinco.product.aiProject.aiprojectainode.EndNode.class);&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/getEndNodeSuccessors"
+          body="return ((graphmodel.Node)this).getSuccessors(info.scce.cinco.product.aiProject.aiprojectainode.EndNode.class);&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/canNewTransition"
+          body="return this.canStart(Transition.class) &amp;&amp; target.canEnd(Transition.class);&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/canNewTransition/target"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/newTransition"
+          body="if (target.canEnd(Transition.class)) {&#xA;&#x9;info.scce.cinco.product.aiProject.aiprojectainode.Transition edge = info.scce.cinco.product.aiProject.factory.AIProjectAINodeFactory.eINSTANCE.createTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());&#xA;&#x9;edge.setSourceElement(this);&#xA;&#x9;edge.setTargetElement(target);&#xA;&#x9;return edge;&#xA;}&#xA;else return null;&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/newTransition/target"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/newTransition/id"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/newTransition.1"
+          body="if (target.canEnd(Transition.class)) {&#xA;&#x9;info.scce.cinco.product.aiProject.aiprojectainode.Transition edge = info.scce.cinco.product.aiProject.factory.AIProjectAINodeFactory.eINSTANCE.createTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());&#xA;&#x9;edge.setSourceElement(this);&#xA;&#x9;edge.setTargetElement(target);&#xA;&#x9;graphmodel.internal.InternalModelElementContainer commonContainer = new de.jabc.cinco.meta.runtime.xapi.GraphModelExtension().getCommonContainer(target.getContainer().getInternalContainerElement(), (graphmodel.internal.InternalEdge) edge.getInternalElement());&#xA;&#x9;commonContainer.getModelElements().add(edge.getInternalElement());&#x9;&#x9;&#x9;&#xA;&#x9;return edge;&#xA;}&#xA;else return null;&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/newTransition.1/target"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/canMoveTo"
+          body="return aIProjectAINode.canContain(info.scce.cinco.product.aiProject.aiprojectainode.AINode.class);&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/canMoveTo/aIProjectAINode"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/canMoveTo/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/canMoveTo/y"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/moveTo"
+          body="graphmodel.ModelElementContainer source = this.getContainer();&#xA;int deltaX = x - ((graphmodel.internal.InternalNode) this.getInternalElement()).getX();&#xA;int deltaY = y - ((graphmodel.internal.InternalNode) this.getInternalElement()).getY();&#xA;s_moveTo(aIProjectAINode, x, y);&#xA;aIProjectAINode.getInternalContainerElement().getModelElements().add(this.getInternalElement());&#xA;setX(x);&#xA;setY(y);&#xA;new de.jabc.cinco.meta.runtime.xapi.GraphModelExtension().moveEdgesToCommonContainer((graphmodel.internal.InternalNode) this.getInternalElement());&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/moveTo/aIProjectAINode"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/moveTo/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/moveTo/y"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/s_moveTo"
+          body="&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/s_moveTo/aIProjectAINode"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/s_moveTo/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/s_moveTo/y"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/s_moveTo.1"
+          body="">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/s_moveTo.1/container"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/s_moveTo.1/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/s_moveTo.1/y"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/postMove"
+          body="">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/postMove/source"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/postMove/target"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/postMove/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/postMove/y"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/postMove/deltaX"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/postMove/deltaY"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/getX"
+          body="return ((graphmodel.internal.InternalNode) getInternalElement()).getX(); &#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/getY"
+          body="return ((graphmodel.internal.InternalNode) getInternalElement()).getY(); &#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/getWidth"
+          body="return ((graphmodel.internal.InternalNode) getInternalElement()).getWidth(); &#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/getHeight"
+          body="return ((graphmodel.internal.InternalNode) getInternalElement()).getHeight(); &#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/preDelete"
+          body=""/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/getPostDeleteFunction"
+          body="return () -> {};"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/resize"
+          body="transact(&quot;Set width&quot;, () -> {&#xA;&#x9;((graphmodel.internal.InternalNode)getInternalElement()).setWidth(width);&#xA;&#x9;((graphmodel.internal.InternalNode)getInternalElement()).setHeight(height);&#xA;&#x9;this.postResize(this, 0, width, height);&#xA;&#x9;this.update();&#xA;});&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/resize/width"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/resize/height"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/postResize"
+          body="">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/postResize/modelElement"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/postResize/direction"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/postResize/width"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/postResize/height"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/getRootElement"
+          body="return (info.scce.cinco.product.aiProject.aiprojectainode.AIProjectAINode) this.getInternalElement().getRootElement().getElement();&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AINode/postSave"
+          body=""/>
+    </genClasses>
+    <genClasses ecoreClass="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode">
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/getAIProjectAINodeView"
+          body="AIProjectAINodeView aIProjectAINodeView = info.scce.cinco.product.aiProject.aiprojectainode.views.ViewsFactory.eINSTANCE.createAIProjectAINodeView();&#xA;&#x9;&#x9;aIProjectAINodeView.setInternalAIProjectAINode((info.scce.cinco.product.aiProject.aiprojectainode.internal.InternalAIProjectAINode)getInternalElement());&#xA;&#x9;&#x9;return aIProjectAINodeView;&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/getInternalAIProjectAINode"
+          body="return (info.scce.cinco.product.aiProject.aiprojectainode.internal.InternalAIProjectAINode) getInternalElement();&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/isExactlyAIProjectAINode"
+          body="return true;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/canNewAINode"
+          body="return this.canContain(AINode.class);&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/canNewEndNode"
+          body="return this.canContain(EndNode.class);&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode"
+          body="return newAINode(x,y,-1,-1);&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode/y"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode.1"
+          body="if (this.canContain(AINode.class)) {&#xA;&#x9;info.scce.cinco.product.aiProject.aiprojectainode.AINode node = info.scce.cinco.product.aiProject.factory.AIProjectAINodeFactory.eINSTANCE.createAINode((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());&#xA;&#x9;this.getInternalContainerElement().getModelElements().add(node.getInternalElement());&#xA;&#x9;node.move(x, y);&#xA;&#x9;node.resize(width, height);&#xA;&#x9;return node;&#xA;} else throw new java.lang.RuntimeException(&#xA;&#x9;java.lang.String.format(&quot;Cannot add node %s to %s&quot;, AINode.class, this.getClass()));&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode.1/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode.1/y"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode.1/width"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode.1/height"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode.2"
+          body="return newAINode(id,x,y,-1,-1);&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode.2/id"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode.2/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode.2/y"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode.3"
+          body="if (this.canContain(AINode.class)) {&#xA;&#x9;info.scce.cinco.product.aiProject.aiprojectainode.AINode node = info.scce.cinco.product.aiProject.factory.AIProjectAINodeFactory.eINSTANCE.createAINode(id, (graphmodel.internal.InternalModelElementContainer)this.getInternalElement());&#xA;&#x9;this.getInternalContainerElement().getModelElements().add(node.getInternalElement());&#xA;&#x9;node.move(x, y);&#xA;&#x9;node.resize(width, height);&#xA;&#x9;return node;&#xA;} else throw new java.lang.RuntimeException(&#xA;&#x9;java.lang.String.format(&quot;Cannot add node %s to %s&quot;, AINode.class, this.getClass()));&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode.3/id"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode.3/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode.3/y"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode.3/width"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAINode.3/height"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode"
+          body="return newEndNode(x,y,-1,-1);&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode/y"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode.1"
+          body="if (this.canContain(EndNode.class)) {&#xA;&#x9;info.scce.cinco.product.aiProject.aiprojectainode.EndNode node = info.scce.cinco.product.aiProject.factory.AIProjectAINodeFactory.eINSTANCE.createEndNode((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());&#xA;&#x9;this.getInternalContainerElement().getModelElements().add(node.getInternalElement());&#xA;&#x9;node.move(x, y);&#xA;&#x9;node.resize(width, height);&#xA;&#x9;return node;&#xA;} else throw new java.lang.RuntimeException(&#xA;&#x9;java.lang.String.format(&quot;Cannot add node %s to %s&quot;, EndNode.class, this.getClass()));&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode.1/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode.1/y"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode.1/width"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode.1/height"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode.2"
+          body="return newEndNode(id,x,y,-1,-1);&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode.2/id"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode.2/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode.2/y"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode.3"
+          body="if (this.canContain(EndNode.class)) {&#xA;&#x9;info.scce.cinco.product.aiProject.aiprojectainode.EndNode node = info.scce.cinco.product.aiProject.factory.AIProjectAINodeFactory.eINSTANCE.createEndNode(id, (graphmodel.internal.InternalModelElementContainer)this.getInternalElement());&#xA;&#x9;this.getInternalContainerElement().getModelElements().add(node.getInternalElement());&#xA;&#x9;node.move(x, y);&#xA;&#x9;node.resize(width, height);&#xA;&#x9;return node;&#xA;} else throw new java.lang.RuntimeException(&#xA;&#x9;java.lang.String.format(&quot;Cannot add node %s to %s&quot;, EndNode.class, this.getClass()));&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode.3/id"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode.3/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode.3/y"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode.3/width"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newEndNode.3/height"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/getAINodes"
+          body="return getModelElements(info.scce.cinco.product.aiProject.aiprojectainode.AINode.class);&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/getEndNodes"
+          body="return getModelElements(info.scce.cinco.product.aiProject.aiprojectainode.EndNode.class);&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAIProjectAINode"
+          body="org.eclipse.core.runtime.IPath filePath = new org.eclipse.core.runtime.Path(path).append(fileName).addFileExtension(&quot;aiprojectainode&quot;);&#xA;org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI.createPlatformResourceURI(filePath.toOSString(), true);&#xA;org.eclipse.core.resources.IFile file = org.eclipse.core.resources.ResourcesPlugin.getWorkspace().getRoot().getFile(filePath);&#xA;org.eclipse.emf.ecore.resource.Resource res = new org.eclipse.emf.ecore.resource.impl.ResourceSetImpl().createResource(uri);&#xA;info.scce.cinco.product.aiProject.aiprojectainode.AIProjectAINode graph = info.scce.cinco.product.aiProject.factory.AIProjectAINodeFactory.eINSTANCE.createAIProjectAINode();&#xA;&#xA;org.eclipse.emf.ecore.util.EcoreUtil.setID(graph, org.eclipse.emf.ecore.util.EcoreUtil.generateUUID());&#xA;&#xA;res.getContents().add(graph.getInternalElement());&#xA;&#xA;try {&#xA;&#x9;res.save(null);&#xA;} catch (java.io.IOException e) {&#xA;&#x9;e.printStackTrace();&#xA;}&#xA;&#xA;return graph;&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAIProjectAINode/path"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAIProjectAINode/fileName"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/newAIProjectAINode/postCreateHook"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/getRootElement"
+          body="return this;&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//AIProjectAINode/postSave"
+          body=""/>
+    </genClasses>
+    <genClasses ecoreClass="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition">
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/getTransitionView"
+          body="TransitionView transitionView = info.scce.cinco.product.aiProject.aiprojectainode.views.ViewsFactory.eINSTANCE.createTransitionView();&#xA;&#x9;&#x9;transitionView.setInternalTransition((info.scce.cinco.product.aiProject.aiprojectainode.internal.InternalTransition)getInternalElement());&#xA;&#x9;&#x9;return transitionView;&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/getInternalTransition"
+          body="return (info.scce.cinco.product.aiProject.aiprojectainode.internal.InternalTransition) getInternalElement();&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/isExactlyTransition"
+          body="return true;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/getSourceElement"
+          body="return(info.scce.cinco.product.aiProject.aiprojectainode.AINode)super.getSourceElement();"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/getTargetElement"
+          body="return(info.scce.cinco.product.aiProject.aiprojectainode.EndNode)super.getTargetElement();"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/canReconnectSource"
+          body="return source.canStart(this.getClass());&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/canReconnectSource/source"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/canReconnectTarget"
+          body="return target.canEnd(this.getClass());&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/canReconnectTarget/target"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/reconnectSource"
+          body="this.setSourceElement(source);&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/reconnectSource/source"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/reconnectTarget"
+          body="this.setTargetElement(target);&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/reconnectTarget/target"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/preDelete"
+          body=""/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/getPostDeleteFunction"
+          body="return () -> {};"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/getRootElement"
+          body="return (info.scce.cinco.product.aiProject.aiprojectainode.AIProjectAINode) this.getInternalElement().getRootElement().getElement();&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//Transition/postSave"
+          body=""/>
+    </genClasses>
+    <genClasses ecoreClass="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode">
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/getEndNodeView"
+          body="EndNodeView endNodeView = info.scce.cinco.product.aiProject.aiprojectainode.views.ViewsFactory.eINSTANCE.createEndNodeView();&#xA;&#x9;&#x9;endNodeView.setInternalEndNode((info.scce.cinco.product.aiProject.aiprojectainode.internal.InternalEndNode)getInternalElement());&#xA;&#x9;&#x9;return endNodeView;&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/getInternalEndNode"
+          body="return (info.scce.cinco.product.aiProject.aiprojectainode.internal.InternalEndNode) getInternalElement();&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/isExactlyEndNode"
+          body="return true;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/getIncomingTransitions"
+          body="return this.getIncoming(Transition.class);&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/getContainer"
+          body="return (info.scce.cinco.product.aiProject.aiprojectainode.AIProjectAINode)getInternalElement().getContainer().getContainerElement();&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/getPredecessors"
+          body="return ((graphmodel.Node)this).getPredecessors(info.scce.cinco.product.aiProject.aiprojectainode.AINode.class);&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/getAINodePredecessors"
+          body="return ((graphmodel.Node)this).getPredecessors(info.scce.cinco.product.aiProject.aiprojectainode.AINode.class);&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/canMoveTo"
+          body="return aIProjectAINode.canContain(info.scce.cinco.product.aiProject.aiprojectainode.EndNode.class);&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/canMoveTo/aIProjectAINode"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/canMoveTo/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/canMoveTo/y"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/moveTo"
+          body="graphmodel.ModelElementContainer source = this.getContainer();&#xA;int deltaX = x - ((graphmodel.internal.InternalNode) this.getInternalElement()).getX();&#xA;int deltaY = y - ((graphmodel.internal.InternalNode) this.getInternalElement()).getY();&#xA;s_moveTo(aIProjectAINode, x, y);&#xA;aIProjectAINode.getInternalContainerElement().getModelElements().add(this.getInternalElement());&#xA;setX(x);&#xA;setY(y);&#xA;new de.jabc.cinco.meta.runtime.xapi.GraphModelExtension().moveEdgesToCommonContainer((graphmodel.internal.InternalNode) this.getInternalElement());&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/moveTo/aIProjectAINode"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/moveTo/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/moveTo/y"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/s_moveTo"
+          body="&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/s_moveTo/aIProjectAINode"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/s_moveTo/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/s_moveTo/y"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/s_moveTo.1"
+          body="">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/s_moveTo.1/container"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/s_moveTo.1/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/s_moveTo.1/y"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/postMove"
+          body="">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/postMove/source"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/postMove/target"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/postMove/x"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/postMove/y"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/postMove/deltaX"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/postMove/deltaY"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/getX"
+          body="return ((graphmodel.internal.InternalNode) getInternalElement()).getX(); &#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/getY"
+          body="return ((graphmodel.internal.InternalNode) getInternalElement()).getY(); &#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/getWidth"
+          body="return ((graphmodel.internal.InternalNode) getInternalElement()).getWidth(); &#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/getHeight"
+          body="return ((graphmodel.internal.InternalNode) getInternalElement()).getHeight(); &#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/preDelete"
+          body=""/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/getPostDeleteFunction"
+          body="return () -> {};"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/resize"
+          body="transact(&quot;Set width&quot;, () -> {&#xA;&#x9;((graphmodel.internal.InternalNode)getInternalElement()).setWidth(width);&#xA;&#x9;((graphmodel.internal.InternalNode)getInternalElement()).setHeight(height);&#xA;&#x9;this.postResize(this, 0, width, height);&#xA;&#x9;this.update();&#xA;});&#xA;">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/resize/width"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/resize/height"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/postResize"
+          body="">
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/postResize/modelElement"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/postResize/direction"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/postResize/width"/>
+        <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/postResize/height"/>
+      </genOperations>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/getRootElement"
+          body="return (info.scce.cinco.product.aiProject.aiprojectainode.AIProjectAINode) this.getInternalElement().getRootElement().getElement();&#xA;"/>
+      <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//EndNode/postSave"
+          body=""/>
+    </genClasses>
+    <nestedGenPackages prefix="Internal" disposableProviderFactory="true" ecorePackage="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//internal">
+      <genClasses ecoreClass="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//internal/InternalAINode">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute /info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//internal/InternalAINode/fileName"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//internal/InternalAINode/getOutgoingConstraints"
+            body="&#xA; ConnectionConstraint cons0 = new ConnectionConstraint(true,1,1,info.scce.cinco.product.aiProject.aiprojectainode.Transition.class);&#xA; org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>eList = new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>();&#xA; &#x9;&#x9; eList.addAll(com.google.common.collect.Lists.newArrayList(cons0));&#xA; &#x9;&#x9;return eList;&#xA;"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//internal/InternalAINode/getIncomingConstraints"
+            body="&#xA; org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>eList = new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>();&#xA; &#x9; &#x9;&#x9; eList.addAll(com.google.common.collect.Lists.newArrayList());&#xA; &#x9; &#x9;&#x9;return eList;&#xA;"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//internal/InternalAINode/getEndNodeSuccessors"
+            body="return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.aiProject.aiprojectainode.EndNode.class);&#xA;"/>
+      </genClasses>
+      <genClasses ecoreClass="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//internal/InternalAIProjectAINode">
+        <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//internal/InternalAIProjectAINode/getContainmentConstraints"
+            body=" org.eclipse.emf.common.util.BasicEList&lt;ContainmentConstraint>constraints = &#xA;&#x9;new org.eclipse.emf.common.util.BasicEList&lt;ContainmentConstraint>();&#xA;constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.aiProject.aiprojectainode.AINode.class,info.scce.cinco.product.aiProject.aiprojectainode.EndNode.class));&#xA;return constraints;&#xA;&#xA;"/>
+      </genClasses>
+      <genClasses ecoreClass="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//internal/InternalTransition"/>
+      <genClasses ecoreClass="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//internal/InternalEndNode">
+        <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//internal/InternalEndNode/getOutgoingConstraints"
+            body="&#xA; org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>eList = new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>();&#xA; &#x9;&#x9; eList.addAll(com.google.common.collect.Lists.newArrayList());&#xA; &#x9;&#x9;return eList;&#xA;"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//internal/InternalEndNode/getIncomingConstraints"
+            body="&#xA; &#xA; ConnectionConstraint cons0 = new ConnectionConstraint(false,0,-1,info.scce.cinco.product.aiProject.aiprojectainode.Transition.class);&#xA; org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>eList = new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>();&#xA; &#x9; &#x9;&#x9; eList.addAll(com.google.common.collect.Lists.newArrayList(cons0));&#xA; &#x9; &#x9;&#x9;return eList;&#xA;"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//internal/InternalEndNode/getAINodePredecessors"
+            body="return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.aiProject.aiprojectainode.AINode.class);&#xA;"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Views" disposableProviderFactory="true" ecorePackage="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//views">
+      <genClasses ecoreClass="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//views/AINodeView">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference /info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//views/AINodeView/internalAINode"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//views/AINodeView/getFileName"
+            body="return getInternalAINode().getFileName();&#xA;"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//views/AINodeView/setFileName"
+            body="getInternalAINode().getElement().transact(&quot;Set FileName&quot;, () -> {&#xA;&#x9;getInternalAINode().setFileName(_arg);&#xA;});&#xA;&#x9;&#xA;">
+          <genParameters ecoreParameter="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//views/AINodeView/setFileName/_arg"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//views/AIProjectAINodeView">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference /info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//views/AIProjectAINodeView/internalAIProjectAINode"/>
+      </genClasses>
+      <genClasses ecoreClass="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//views/TransitionView">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference /info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//views/TransitionView/internalTransition"/>
+      </genClasses>
+      <genClasses ecoreClass="/info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//views/EndNodeView">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference /info.scce.cinco.product.aiProject/src-gen/model/AIProjectAINode.ecore#//views/EndNodeView/internalEndNode"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

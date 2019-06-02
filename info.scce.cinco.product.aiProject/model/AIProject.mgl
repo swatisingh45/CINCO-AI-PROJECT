@@ -1,0 +1,84 @@
+
+import "model/AIProjectAINode.mgl" as aiNode
+
+@style("model/AIProject.style")
+graphModel AIProject {
+	package info.scce.cinco.product.aiProject
+	nsURI "http://cinco.scce.info/product/aiproject"
+	diagramExtension "AIProject"
+	
+	// Prime reference to another node that is AI Node
+	
+	@style(greenCircle)
+	prime node StartNode for aiNode.AIProjectAINode {
+		outgoingEdges(Transition[1,*])
+		parameters{
+			name  param.name1
+			//name is the file name 
+		}
+		
+	}
+	
+	
+	@style(labeledCircle, "${label}")
+	node OperatorNode {
+		incomingEdges (Transition[1,1])
+		outgoingEdges (OpTransition[1,*])
+		attr EString as label
+	}	
+
+
+@style(blueCircle)
+node EndNode {
+	incomingEdges(OpTransition[1,1])
+	
+}
+
+	
+@style(simpleArrow)
+edge Transition { 
+	
+}
+
+
+@style(simpleArrow)
+edge OpTransition{
+	
+}
+
+enum Operations {
+	
+	Eint a
+	Eint b
+	Eint c
+	Eint d
+	
+}op
+
+
+
+/* 
+}
+@style(labeledArrow, "${label}"){
+	edge LabeledTransition {
+    attr EString as label
+}
+
+*/
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

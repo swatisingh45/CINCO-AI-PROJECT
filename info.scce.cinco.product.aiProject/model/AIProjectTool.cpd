@@ -1,0 +1,4 @@
+cincoProduct AIProjectTool {
+	mgl "model/AIProject.mgl"
+	mgl "model/AIProjectAINode.mgl"
+}		

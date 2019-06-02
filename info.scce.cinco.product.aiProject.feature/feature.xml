@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="info.scce.cinco.product.aiProject.feature"
+	label="info.scce.cinco.product.aiProject Feature "
+	version="1.0.0.qualifier">
+	<plugin
+		id="info.scce.cinco.product.aiProject.product"
+		download-size="0"
+		install-size="0"
+		version="0.0.0"
+		unpack="false"/>
+</feature>

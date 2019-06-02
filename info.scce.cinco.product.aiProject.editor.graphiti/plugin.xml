@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+<extension
+	point="org.eclipse.graphiti.ui.diagramTypeProviders">
+<!--@CincoGen AIProject-->
+	<diagramTypeProvider
+		class="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectDiagramTypeProvider"
+		description="This is the generated editor for the AIProject"
+		id="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectDiagramTypeProvider"
+		name=".AIProject Diagram Editor">
+		<diagramType
+			id="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectDiagramType">
+		</diagramType>
+		<imageProvider
+			id="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectImageProvider">
+		</imageProvider>
+	</diagramTypeProvider>
+</extension>
+
+<extension 
+	point="org.eclipse.graphiti.ui.diagramTypes">
+<!--@CincoGen AIProject-->
+	<diagramType
+		description="This is the generated diagram Type for AIProject"
+		id="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectDiagramType"
+		name="AIProject Graphiti Diagram Type"
+		type="AIProject">
+	</diagramType>
+</extension>
+
+<extension
+	point="org.eclipse.ui.editors">
+<!--@CincoGen AIProject-->
+	<editor
+		class="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectDiagramEditor"
+		contributorClass="org.eclipse.graphiti.ui.editor.DiagramEditorActionBarContributor"
+		default="false"
+		id="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectEditor"
+		matchingStrategy="org.eclipse.graphiti.ui.editor.DiagramEditorMatchingStrategy"
+		name="AIProject Editor">
+		<contentTypeBinding
+			contentTypeId="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectContentType">
+		</contentTypeBinding>
+		<contentTypeBinding
+			contentTypeId="org.eclipse.graphiti.content.diagram">
+		</contentTypeBinding>
+	</editor>
+</extension>
+
+<extension
+	point="org.eclipse.graphiti.ui.imageProviders">
+<!--@CincoGen AIProject-->
+	<imageProvider
+		class="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectImageProvider"
+		id="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectImageProvider">
+	</imageProvider>
+</extension>
+
+<extension
+	point="org.eclipse.ui.newWizards">
+<!--@CincoGen AIProject-->
+	<wizard
+		category="de.jabc.cinco.meta.core.wizards.category.cinco"
+		class="info.scce.cinco.product.aiProject.editor.graphiti.wizard.AIProjectDiagramWizard"
+		id="info.scce.cinco.product.aiProject.editor.graphiti.wizard.aiproject"
+		name="New AIProject">
+	</wizard>
+</extension>
+
+<extension
+	point="org.eclipse.core.contenttype.contentTypes">
+<!--@CincoGen AIProject-->
+	<content-type
+		file-extensions="AIProject"
+		id="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectContentType"
+		name="AIProject Content Type"
+		priority="normal">
+	</content-type>
+</extension>
+
+<extension
+	point="org.eclipse.ui.navigator.navigatorContent">
+<!--@CincoGen AIProject-->
+	<commonWizard
+		menuGroupId="mgl"
+		type="new"
+		wizardId="info.scce.cinco.product.aiProject.editor.graphiti.wizard.aiproject">
+		<enablement></enablement>
+	</commonWizard>
+</extension>
+
+
+<extension
+	point="de.jabc.cinco.meta.core.referenceregistry">
+<!--@CincoGen AIProject-->
+	<FileExtensionsRegistry
+		class="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectFileExtensions">
+	</FileExtensionsRegistry>
+</extension>
+
+<extension
+	point="org.eclipse.ui.perspectives">
+<!--@CincoGen AIProject-->
+	<perspective
+		class="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectPerspectiveFactory"
+		fixed="false"
+		id="info.scce.cinco.product.aiProject.editor.graphiti.aiprojectperspective"
+		name="AIProject Perspective">
+	</perspective>
+</extension>
+
+<extension
+      point="org.eclipse.emf.ecore.content_parser">
+<!--@CincoGen AIProject-->
+   <parser
+         class="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectAPIParser"
+         contentTypeIdentifier="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectContentType">
+   </parser>
+</extension>
+
+<extension
+	point="org.eclipse.emf.ecore.factory_override">
+<!--@CincoGen AIProject-->
+   		<factory
+        	class="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectFactory"
+        	uri="http://cinco.scce.info/product/aiproject">
+   		</factory>
+	</extension>
+
+<extension
+	point="org.eclipse.ui.perspectives">
+<!--@CincoGen AIPROJECTTOOL-->
+	<perspective
+		class="info.scce.cinco.product.aiProject.editor.graphiti.AIProjectToolPerspective"
+		fixed="false"
+		id="info.scce.cinco.product.aiProject.aiprojecttoolperspective"
+		name="AIProjectTool Perspective">
+	</perspective>
+</extension></plugin>

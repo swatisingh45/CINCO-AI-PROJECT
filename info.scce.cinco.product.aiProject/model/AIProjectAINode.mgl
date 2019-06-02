@@ -1,0 +1,55 @@
+@style("model/AIProject.style")
+graphModel AIProjectAINode {
+	package info.scce.cinco.product.aiProject
+	nsURI "http://cinco.scce.info/product/aiproject"
+	diagramExtension "aiprojectAINode"
+	
+	@style(greenCircle)
+	node AINode {
+		//This is the AINode
+		outgoingEdges(Transition[1,1])
+		attr EString as fileName 
+		
+		//Load the AI files here 
+		
+	}
+	
+	
+	enum AIs{
+	//Name of the files 
+		 name1
+		 name2
+		 name3
+	}
+	
+	
+	
+	
+	@style(redCircle)
+	node EndNode {
+		incomingEdges(Transition)
+		
+	}
+	
+	
+	
+	@style(simpleArrow)
+	edge Transition{
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

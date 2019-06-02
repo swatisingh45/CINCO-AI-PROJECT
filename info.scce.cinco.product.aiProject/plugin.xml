@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+<extension
+	point="org.eclipse.ui.navigator.navigatorContent">
+<!--@CincoGen PROJECT_WIZARD_AIPROJECTTOOL_NAV -->		
+<commonWizard
+	menuGroupId="mgl"
+	type="new"
+	wizardId="info.scce.cinco.product.aiProject.wizard.aiprojecttoolproject">
+	<enablement></enablement>
+</commonWizard>
+</extension>
+<extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated AIProjectAINode -->
+      <package class="info.scce.cinco.product.aiProject.aiprojectainode.AiprojectainodePackage" uri="http://cinco.scce.info/product/aiproject"/>
+   </extension><extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated AIProjectAINode -->
+      <package class="info.scce.cinco.product.aiProject.aiprojectainode.internal.InternalPackage" uri="http://cinco.scce.info/product/aiproject/internal"/>
+   </extension><extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated AIProjectAINode -->
+      <package class="info.scce.cinco.product.aiProject.aiprojectainode.views.ViewsPackage" uri="http://cinco.scce.info/product/aiproject/views"/>
+   </extension><extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated AIProject -->
+      <package class="info.scce.cinco.product.aiProject.aiproject.AiprojectPackage" uri="http://cinco.scce.info/product/aiproject"/>
+   </extension><extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated AIProject -->
+      <package class="info.scce.cinco.product.aiProject.aiproject.internal.InternalPackage" uri="http://cinco.scce.info/product/aiproject/internal"/>
+   </extension><extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated AIProject -->
+      <package class="info.scce.cinco.product.aiProject.aiproject.views.ViewsPackage" uri="http://cinco.scce.info/product/aiproject/views"/>
+   </extension><extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated AIProject -->
+      <package class="info.scce.cinco.product.aiProject.aiproject.AiprojectPackage" uri="http://cinco.scce.info/product/aiproject"/>
+   </extension><extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated AIProject -->
+      <package class="info.scce.cinco.product.aiProject.aiproject.internal.InternalPackage" uri="http://cinco.scce.info/product/aiproject/internal"/>
+   </extension><extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated AIProject -->
+      <package class="info.scce.cinco.product.aiProject.aiproject.views.ViewsPackage" uri="http://cinco.scce.info/product/aiproject/views"/>
+   </extension><extension point="org.eclipse.ui.newWizards">
+<!--@CincoGen PROJECT_WIZARD_AIPROJECTTOOL_WIZ -->
+<wizard category="de.jabc.cinco.meta.core.wizards.category.cinco" class="info.scce.cinco.product.aiProject.AIProjectToolProjectWizard" id="info.scce.cinco.product.aiProject.wizard.aiprojecttoolproject" name="New AIProjectTool Project">
+</wizard>
+</extension></plugin>

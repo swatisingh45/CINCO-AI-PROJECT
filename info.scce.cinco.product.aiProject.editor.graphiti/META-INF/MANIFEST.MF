@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: info.scce.cinco.product.aiProject.editor.graphiti
+ ; singleton:=true
+Export-Package: info.scce.cinco.product.aiProject.editor.graphiti
+Bundle-Name: info.scce.cinco.product.aiProject.editor.graphiti
+Bundle-Version: 1.0.0
+Require-Bundle:  org.eclipse.emf.transaction,org.eclipse.graphiti,org.
+ eclipse.graphiti.mm,org.eclipse.graphiti.ui,org.eclipse.core.resource
+ s,org.eclipse.ui,org.eclipse.ui.ide,org.eclipse.ui.navigator,org.ecli
+ pse.ui.views.properties.tabbed,org.eclipse.gef,org.eclipse.xtext.ui,o
+ rg.eclipse.xtext.xbase.lib,de.jabc.cinco.meta.core.ge.style.model,de.
+ jabc.cinco.meta.core.ge.style.generator,de.jabc.cinco.meta.core.refer
+ enceregistry,de.jabc.cinco.meta.core.ui,de.jabc.cinco.meta.util,de.ja
+ bc.cinco.meta.runtime,de.jabc.cinco.meta.core.utils,de.jabc.cinco.met
+ a.core.wizards,javax.el,com.sun.el,de.jabc.cinco.meta.core.ge.style.g
+ enerator.runtime,info.scce.cinco.product.aiProject
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+
