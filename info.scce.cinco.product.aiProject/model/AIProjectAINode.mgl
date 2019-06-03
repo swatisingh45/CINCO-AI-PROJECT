@@ -23,7 +23,7 @@ graphModel AIProjectAINode {
 	}
 	
 	
-	
+	// I am not sure if we can have a single node only, so adding an End node too
 	
 	@style(redCircle)
 	node EndNode {
