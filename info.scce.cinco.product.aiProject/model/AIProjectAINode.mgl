@@ -16,7 +16,8 @@ graphModel AIProjectAINode {
 	
 	
 	enum AIs{
-	//Name of the files 
+	
+	 /* Name of the files, not sure how to define it as a String, I tried EString, but isn't working */
 		 name1
 		 name2
 		 name3
